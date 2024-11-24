@@ -1,0 +1,88 @@
+/* Admin Box Styling */
+.admn-box-info {
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: #F8F8F8;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
+
+.admin-left {
+  width: 30%; /* Default: left side takes 30% width */
+  text-align: center;
+}
+
+.admin_right {
+  width: 70%; /* Default: right side takes 70% width */
+  padding-left: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .admn-box-info {
+    flex-direction: column; /* Stack items vertically on small screens */
+  }
+
+  .admin-left {
+    width: 100%; /* Full width for left section */
+    margin-bottom: 20px; /* Add spacing between stacked sections */
+  }
+
+  .admin_right {
+    width: 100%; /* Full width for right section */
+    padding-left: 0; /* Remove left padding */
+  }
+}
+
+/* Image Styling */
+.admin-image img {
+  width: 150px; /* Fixed width */
+  height: 150px; /* Match height to width */
+  border-radius: 50%; /* Makes the image circular */
+  border: 2px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover; /* Prevents image distortion */
+}
+
+/* Social Icons Styling */
+.social-icon-list {
+  margin: 10px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social-icon-list-item {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.social-icon-list-item-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50%; /* Rounded icons */
+  transition: background-color 0.3s ease;
+}
+
+.social-icon-list-item-link.facebook {
+  background-color: #3b5998;
+}
+
+.social-icon-list-item-link.facebook:hover {
+  background-color: #2d4373;
+}
+
+.social-icon-list-item-link.twitter {
+  background-color: #1da1f2;
+}
+
+.social-icon-list-item-link.twitter:hover {
+  background-color: #0d8ddf;
+}
